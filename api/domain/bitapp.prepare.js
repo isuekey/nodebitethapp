@@ -34,6 +34,13 @@ redis.hmset(`${KEYS.client}${APP}`, {
     clientSecret: 'a1d405a9257191a9dcaca'
 });
 const CONFIG = {
+    promoServerUpdateOption:{
+        port:8101,
+        hostname:"localhost",
+        method:"POST",
+        path:"/promo/ssl/public/fund/bitlisten",
+        timeout: 300000
+    },
     callBackServerOption:{
         port:9000,
         hostname:"localhost",
